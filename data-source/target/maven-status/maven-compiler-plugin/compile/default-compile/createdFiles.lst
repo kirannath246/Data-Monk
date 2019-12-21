@@ -1,0 +1,13 @@
+com/knowledge/datasource/commons/ExternalObjectAttribute.class
+com/knowledge/datasource/commons/ConnectionParameters.class
+com/knowledge/datasource/commons/ExternalAttributeType.class
+com/knowledge/datasource/data/SalesforceDataSet.class
+com/knowledge/datasource/DatasourceSpringConfiguration.class
+com/knowledge/datasource/commons/ExternalDataSource.class
+com/knowledge/datasource/ExternalDataSourceFactory.class
+com/knowledge/datasource/data/ExternalDataSet.class
+com/knowledge/datasource/salesforce/ExternalSalesForceSource$BatchIdAndResultId.class
+com/knowledge/datasource/data/ExtDataProcessor.class
+com/knowledge/datasource/salesforce/ExternalSalesForceSource.class
+com/knowledge/datasource/App.class
+com/knowledge/datasource/commons/ExternalObject.class

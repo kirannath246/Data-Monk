@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: com.knowledge.data_source.test.SalesForceSourceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 3.986 sec <<< FAILURE! - in com.knowledge.data_source.test.SalesForceSourceTest
+salesforceAttributeListing(com.knowledge.data_source.test.SalesForceSourceTest)  Time elapsed: 2.923 sec  <<< ERROR!
+com.sforce.soap.partner.fault.LoginFault: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:677)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:560)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:250)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:224)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:163)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:108)
+	at com.sforce.soap.partner.PartnerConnection.login(PartnerConnection.java:818)
+	at com.sforce.soap.partner.PartnerConnection.<init>(PartnerConnection.java:427)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.getBulkConnection(ExternalSalesForceSource.java:315)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.openDataSource(ExternalSalesForceSource.java:85)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.getObjectAttribute(ExternalSalesForceSource.java:139)
+	at com.knowledge.data_source.test.SalesForceSourceTest.salesforceAttributeListing(SalesForceSourceTest.java:39)
+
+salesforceObjectlisting(com.knowledge.data_source.test.SalesForceSourceTest)  Time elapsed: 0.344 sec  <<< ERROR!
+com.sforce.soap.partner.fault.LoginFault: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:677)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:560)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:250)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:224)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:163)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:108)
+	at com.sforce.soap.partner.PartnerConnection.login(PartnerConnection.java:818)
+	at com.sforce.soap.partner.PartnerConnection.<init>(PartnerConnection.java:427)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.getBulkConnection(ExternalSalesForceSource.java:315)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.openDataSource(ExternalSalesForceSource.java:85)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.getObjects(ExternalSalesForceSource.java:122)
+	at com.knowledge.data_source.test.SalesForceSourceTest.salesforceObjectlisting(SalesForceSourceTest.java:44)
+
+salesforceQueryExecution(com.knowledge.data_source.test.SalesForceSourceTest)  Time elapsed: 0.293 sec  <<< ERROR!
+com.sforce.soap.partner.fault.LoginFault: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:677)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:560)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:250)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:224)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:163)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:108)
+	at com.sforce.soap.partner.PartnerConnection.login(PartnerConnection.java:818)
+	at com.sforce.soap.partner.PartnerConnection.<init>(PartnerConnection.java:427)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.getBulkConnection(ExternalSalesForceSource.java:315)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.openDataSource(ExternalSalesForceSource.java:85)
+	at com.knowledge.datasource.salesforce.ExternalSalesForceSource.query(ExternalSalesForceSource.java:101)
+	at com.knowledge.data_source.test.SalesForceSourceTest.salesforceQueryExecution(SalesForceSourceTest.java:51)
+

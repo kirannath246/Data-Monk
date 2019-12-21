@@ -1,0 +1,5 @@
+externalDataSource:
+  salesforce:
+    isPkChunkingEnabled: true
+    pkChunkingSize: 4
+    retryIntervalInSeconds: 30

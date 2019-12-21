@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.knowledge.data_source.test.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.459 sec - in com.knowledge.data_source.test.AppTest
